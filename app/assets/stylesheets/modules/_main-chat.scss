@@ -1,5 +1,135 @@
 .main-chat {
-  height: 100vh;
-  width: calc(100vw - 300px);
-  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  &__group-info {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+      &__group-name {
+        color: #333333;
+        font-size: 20px;
+        padding: 35px 0px 15px 0;
+      }
+
+      &__group-member {
+        color: #999999;
+        font-size: 12px;
+        padding: 0;
+      }
+
+    &__Edit {
+      font-size: 16px;
+      padding: 0 20px;
+      border: 1px solid #38aef0;
+      height: 40px
+    }
+
+    .edit-btn {
+      color: #38aef0;
+      text-decoration: none;
+      line-height: 40px;
+    }
+        
+
+  &__message-list {
+    height: calc(100vh - 100px - 90px) ;
+    width: calc(100vw - 300px);
+    background-color: #fafafa;
+    padding-left: 40px;
+  }
+
+    &__message1 {
+      margin: 35px 0 12px 0px;
+      color: #333333;
+      font-size: 16px;
+    }
+
+    &__message2 {
+      margin: 0 0 46px 0;
+      color: #434A54;
+      font-size: 14px;
+    }
+
+    .date {
+      color: #999999;
+      font-size: 12px;
+    }
+
+
+
+  &__message-form {
+    height: 90px;
+    width: calc(100vw - 300px);
+    background-color: #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    &__input-form {
+      height: 50px;
+      width: 100%;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-left: 50px;
+    }
+
+      &__type-a-message{
+        width: 100%;
+        left: 10px;
+      }
+
+        &__text {
+          border: none;
+          height: 50px;
+          width: 100%;
+          padding: 0 10px 0 10px;
+        }
+
+
+        &__btn {
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        }
+
+        .file-field {
+          display: none;
+        }
+
+    &__submit {
+      font-size: 16px;
+      background-color: #38aef0;
+      color: #fff;
+      border: none;
+      height: 50px;
+      margin: 0 40px 0 15px;
+      padding: 0 30px
+    }
 }
+
+// // div {
+// //   background-color: violet;
+// // }
+
+// .content {
+//   background-color: violet;
+// }
+
+// #top-content {
+//   background-color: violet;
+// }
