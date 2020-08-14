@@ -1,0 +1,32 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__groups
+      .main-chat__group-name
+        %p test
+      .main-chat__group-member
+        %p Member : masa
+    .main-chat__edit
+      .main-chat__Edit
+        = link_to "Edit", "#", class:"edit-btn" 
+  .main-chat__message-list
+    .main-chat__message1
+      %span.user masa 
+      %span.date 2019/11/20(Wed)17:43:01
+    .main-chat__message2
+      %p.message おはよう！ 
+    .main-chat__message1
+      %span.user masa
+      %span.date 2019/11/20(Wed)17:43:34
+    .main-chat__message2
+      %p.message 今日も夜から雨
+
+  .main-chat__message-form
+    .main-chat__input-form
+      .main-chat__type-a-message
+        %input.main-chat__text{"placeholder": "type a message", "type": "text"}
+      .main-chat__icon
+        %label
+          = icon('far', 'image', class: "main-chat__btn")
+          %input.file-field{type: "file"}
+    .main-chat__send
+      %input.main-chat__submit{type: "submit" ,value: "Send"}
