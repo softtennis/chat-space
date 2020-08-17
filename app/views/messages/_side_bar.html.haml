@@ -6,14 +6,19 @@
       .side-bar__content-message-right
         .side-bar__icon-list
           .side-bar__icon
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('far', 'edit',  class: "side-bar__btn--icon")
           .side-bar__icon
             = link_to edit_user_path(current_user) do
               = icon('fas', 'cog',  class: "side-bar__btn--icon")
         
   .side-bar__group-list
-    .side-bar__group-name
-      %b techcamp
-    .side-bar__new-message
-      %b まだメッセージがありません
+    - current_user.groups.each do |group|
+      .Group
+        = link_to '#' do
+          .side-bar__group-name
+            = group.name
+          .side-bar__new-message
+            メッセージはまだありません
+
+            -# edit_group_path
