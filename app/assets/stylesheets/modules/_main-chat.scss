@@ -45,6 +45,7 @@
     width: calc(100vw - 300px);
     background-color: #fafafa;
     padding-left: 40px;
+    overflow: scroll;
   }
 
     &__message1 {
